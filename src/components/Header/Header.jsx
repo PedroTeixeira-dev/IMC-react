@@ -6,11 +6,16 @@ function Header() {
     const [seuNome, setSeuNome] = useState('')
     
     useEffect(() =>{
-        const nome = prompt('Digite seu nome')
-        if (seuNome ==='') {
-            setSeuNome(nome)
-        }
+            function pedeNome() {
+                if (seuNome ==='') {
+                const nome = prompt('Digite seu nome')
+                if (seuNome ==='') {
+                    setSeuNome(nome)
+                }
+            }}
 
+            pedeNome()
+        
     }, [])
 
     return (

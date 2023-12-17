@@ -5,6 +5,7 @@ form {
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
+    align-items: center;
 }
 
 .formItem {
@@ -15,7 +16,43 @@ form {
 
 input {
     border-radius: 5%;
-    border: 2px solid #c23616;
+    border: 3px solid #c23616;
     margin-top: 5px;
     outline: none;
+    height: 2rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+button{
+    width: 100px;
+    height: 60px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10%;
+    background-color: #c23616;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: ease-in-out;
+}
+
+button:hover {
+    transition-duration: 0.5s;
+    color: #c23616;
+    background-color: whitesmoke;
+    border: 2px solid #c23616;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+span {
+    color: #c23616;
+    font-weight: bold;
 }
