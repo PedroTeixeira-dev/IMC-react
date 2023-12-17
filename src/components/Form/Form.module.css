@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+input {
+    border-radius: 5%;
+    border: 2px solid #c23616;
+    margin-top: 5px;
+    outline: none;
+}
