@@ -1,17 +1,18 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import styles from './Header.module.css'
 
 function Header() {
     
     const [seuNome, setSeuNome] = useState('')
+    const isFirstRender = useRef(true)
     
     useEffect(() =>{
             function pedeNome() {
-                if (seuNome ==='') {
-                const nome = prompt('Digite seu nome')
-                if (seuNome ==='') {
+                if (isFirstRender.current) {
+                    const nome = prompt('Digite seu nome')
                     setSeuNome(nome)
-                }
+                    isFirstRender.current = false
+                    return
             }}
 
             pedeNome()

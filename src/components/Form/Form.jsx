@@ -12,7 +12,6 @@ function Form() {
         setIMC(calculo.toFixed(2))
     }
 
-
     return (
         <>
         <form className="container">
@@ -30,7 +29,6 @@ function Form() {
         {IMC !== 0 &&
         <h3>Seu IMC é: <span>{IMC}</span></h3>
         }
-
         </>
     )
 }
