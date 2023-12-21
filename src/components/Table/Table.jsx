@@ -9,7 +9,7 @@ function Table() {
     const indiceGeral = [indice1, indice2, indice3]
 
     return (
-        <div className="container tabela" >
+        <div className="tabela" >
         <table>
             <thead >
                 <tr>
@@ -18,15 +18,15 @@ function Table() {
             </thead>
             <tbody>
                 <tr >
-                    <td >IMC</td>
-                    <td>Classificação</td>
-                    <td>Obesidade (grau)</td>
+                    <td className="item">IMC</td>
+                    <td className="item">Classificação</td>
+                    <td className="item">Obesidade (grau)</td>
                 </tr>
                 {[0, 1, 2, 3, 4].map(item => (
                         <tr  key={item}>
-                            <td className="linha"  >{indiceGeral[0][item]}</td>
-                            <td className="linha" >{indiceGeral[1][item]}</td>
-                            <td className="linha" >{indiceGeral[2][item]}</td>
+                            <td className="item"  >{indiceGeral[0][item]}</td>
+                            <td className="item" >{indiceGeral[1][item]}</td>
+                            <td className="item" >{indiceGeral[2][item]}</td>
                         </tr>
                     ))}
             </tbody>

@@ -1,18 +1,29 @@
 .tabela {
-    margin-top: 10px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: #00a8ff;
+    max-width: 525px;
+    width: 40%;
+    padding-bottom: 15px;
+    border-radius: 10%;
+    color:#f5f6fa ;
+    font-weight: bold;
 }
 
 .table-head {
     padding-top: 20px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: solid 5px #0097e6 ;
+    width: 100%;
 }
 
-.linha {
-    padding-top: 30px;
+.item {
+    padding-top: 20px;
     padding-right: 10px;
+    border-bottom: solid 5px #0097e6 ;
 }

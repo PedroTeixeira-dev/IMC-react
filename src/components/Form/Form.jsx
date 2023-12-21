@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import styles from './Form.module.css'
 
-function Form() {
+function Form({onIMCUpdate}) {
 
     const [peso, setPeso] = useState(0)
     const [altura, setAltura] = useState(0)
-    const [IMC, setIMC] = useState(0)
 
     function calculaIMC() {
         const calculo = peso / (altura*altura)
-        setIMC(calculo.toFixed(2))
+        const novoIMC = calculo.toFixed(2)
+        onIMCUpdate(novoIMC)
     }
 
     return (
@@ -33,7 +33,6 @@ function Form() {
     )
 }
 
-export { IMC }
 
 export default Form
 
