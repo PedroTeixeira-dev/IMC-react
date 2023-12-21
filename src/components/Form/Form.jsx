@@ -33,6 +33,8 @@ function Form() {
     )
 }
 
+export { IMC }
+
 export default Form
 
 // https://flatuicolors.com/palette/gb
