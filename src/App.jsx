@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <Form onIMCUpdate={handleIMCUpdate} />
-      <Table />
+      <Table prop = {IMC} />
       {IMC !== 0 && 
       <h3>Seu IMC é: <span>{IMC}</span></h3>
       }

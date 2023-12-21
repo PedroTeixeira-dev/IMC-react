@@ -27,3 +27,11 @@
     padding-right: 10px;
     border-bottom: solid 5px #0097e6 ;
 }
+
+.item-selecionado {
+    background-color: #EA2027;
+    color: #fbc531;
+    padding-top: 20px;
+    padding-right: 10px;
+    border-bottom: solid 5px #0097e6 ;
+}

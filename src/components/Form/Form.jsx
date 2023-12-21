@@ -24,7 +24,6 @@ function Form({onIMCUpdate}) {
                 <input onChange={event => setAltura(parseFloat(event.target.value))} type="number" />
             </div>
             <button onClick={calculaIMC} type='button'>Calcular</button>
-            {console.log(IMC)}
         </form>
         </>
     )
