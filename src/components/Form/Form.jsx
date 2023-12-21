@@ -26,9 +26,6 @@ function Form({onIMCUpdate}) {
             <button onClick={calculaIMC} type='button'>Calcular</button>
             {console.log(IMC)}
         </form>
-        {IMC !== 0 &&
-        <h3>Seu IMC é: <span>{IMC}</span></h3>
-        }
         </>
     )
 }

@@ -16,8 +16,12 @@ function App() {
   return (
     <>
       <Header />
-      <Form />
+      <Form onIMCUpdate={handleIMCUpdate} />
       <Table />
+      {IMC !== 0 && 
+      <h3>Seu IMC é: <span>{IMC}</span></h3>
+      }
+
     </> 
   )
 }
